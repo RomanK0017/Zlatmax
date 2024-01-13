@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Карточка товара</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240113164143">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__top top-header">
+				<div class="top-header__container">
+					<div class="top-header__menu menu-top-header">
+						<nav class="menu-top-header__body">
+							<ul class="menu-top-header__list" data-da=".menu__body, 991.98">
+								<li class="menu-top-header__item menu-top-header__item_catalog"><a class="menu-top-header__link menu-top-header__link_catalog _icon-arrow-bottom" href="#">Каталог товаров</a></li>
+								<li class="menu-top-header__item"><a class="menu-top-header__link" href="#">О нас</a></li>
+								<li class="menu-top-header__item"><a class="menu-top-header__link" href="#">Оплата и доставка</a></li>
+								<li class="menu-top-header__item"><a class="menu-top-header__link" href="#">Новости</a></li>
+								<li class="menu-top-header__item"><a class="menu-top-header__link" href="#">Контакты</a></li>
+							</ul>
+						</nav>
+					</div> <!-- End Menu-Top-Header -->
+					<a class="top-header__user _icon-user" href="#"><span>Личный кабинет</span></a>
+					<nav class="menu" hidden>
+						<button class="menu__icon icon-menu" type="button"><span></span></button>
+						<div class="menu__body"></div>
+					</nav> <!-- End Menu -->
+				</div> <!-- End Top-Header__Container -->
+			</div> <!-- End Header__Top -->
+			<div class="header__body body-header">
+				<div class="body-header__container">
+					<a class="body-header__logo _icon-logo" href="#"></a>
+					<div class="body-header__search" data-da=".catalog-header__container, 479.98">
+						<form class="search-header" action="#">
+							<button class="search-header__button _icon-search" type="button"></button>
+							<input class="search-header__input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Поиск">
+						</form>
+					</div> <!-- End Body-Header__Search -->
+					<div class="body-header__actions actions-header">
+						<a class="actions-header__location _icon-location" href="#"><span>Нью Йорк</span></a>
+						<div class="actions-header__phones phones-header" data-da=".top-header__container, 991.98, 0">
+							<div class="phones-header__items" data-spollers>
+								<div class="phones-header__item">
+									<a class="phones-header__phone" href="tel:1-222-333-44-55">1-222-333-44-55</a>
+									<button class="phones-header__arrow _icon-arrow-bottom" type="button" data-spoller></button>
+									<ul class="phones-header__list">
+										<li><a class="phones-header__phone" href="tel:1-222-333-44-55">1-222-333-44-55</a></li>
+										<li><a class="phones-header__phone" href="tel:1-222-333-44-55">1-222-333-44-56</a></li>
+										<li><a class="phones-header__phone" href="tel:1-222-333-44-55">1-222-333-44-57</a></li>
+										<li><a class="phones-header__phone" href="tel:1-222-333-44-55">1-222-333-44-58</a></li>
+									</ul>
+								</div>
+							</div>
+							<button class="phones-header__callback" data-popup="#callback" type="button">Заказать звонок</button>
+						</div> <!-- End Phone Spollers -->
+						<a class="actions-header__favorite _icon-favorite" href="#" data-da=".top-header__container, 991.98, 2"></a> <!-- End Actions-Header__Favorite -->
+						<a class="actions-header__cart cart-header" href="#" data-da=".top-header__container, 991.98, 2">
+							<div class="cart-header__icon _icon-cart"><span>0</span></div>
+							<div class="cart-header__body">
+								<div class="cart-header__sum">0 $.</div>
+								<div class="cart-header__link" href="#">Оформить заказ</div>
+							</div>
+						</a> <!-- End Actions-Header__Cart -->
+					</div> <!-- End Body-Header__Actions -->
+				</div> <!-- Body-Header__Container -->
+			</div> <!-- End Header__Body -->
+			<div class="header__catalog catalog-header">
+				<div class="catalog-header__container">
+					<nav class="catalog-header__menu menu-catalog">
+						<button class="menu-catalog__back _icon-arrow-left" type="button">Назад</button>
+						<ul class="menu-catalog__list">
+							<li class="menu-catalog__item"><button class="menu-catalog__link" data-parent="1">Каталог ножей</button></li>
+							<li class="menu-catalog__item"><button class="menu-catalog__link" data-parent="2">Клинковое оружие</button></li>
+							<li class="menu-catalog__item"><a class="menu-catalog__link" href="#">Сувенирные изделия</a></li>
+							<li class="menu-catalog__item"><a class="menu-catalog__link" href="#">Фонари ARMYTEK</a></li>
+							<li class="menu-catalog__item"><a class="menu-catalog__link" href="#">Сопуствующие товары</a></li>
+						</ul> <!-- End Menu-Catalog__List-->
+						<div class="menu-catalog__sub-menu sub-menu-catalog">
+							<button class="sub-menu-catalog__back _icon-arrow-left" type="button">Назад</button>
+							<div class="sub-menu-catalog__container">
+								<div class="sub-menu-catalog__block" data-submenu="1" hidden>
+									<div class="sub-menu-catalog__category">
+										<a class="sub-menu-catalog__link-category" href="#">Каталог ножей</a>
+									</div>
+									<div class="sub-menu-catalog__category">
+										<a class="sub-menu-catalog__link-category" href="#">Производство ножей</a>
+									</div>
+									<div class="sub-menu-catalog__category">
+										<a class="sub-menu-catalog__link-category" href="#">Ножи по маркам стали</a>
+									</div>
+									<div class="sub-menu-catalog__category">
+										<a class="sub-menu-catalog__link-category" href="#">Заточка и полировка ножей</a>
+									</div>
+									<div class="sub-menu-catalog__category">
+										<a class="sub-menu-catalog__link-category" href="#">Ножевая мастерская</a>
+									</div>
+									<ul class="sub-menu-catalog__list">
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Разделочные ножи</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Туристические ножи</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи охотничьи</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Булатные ножи</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи из дамаска</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Тактического назначения</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Метательные ножи</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Мачете и кукри</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи кухонные</a></li>
+									</ul> <!-- End Sub-Menu-Catalog__list №1 -->
+									<ul class="sub-menu-catalog__list">
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи АИР</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи ЗИК</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи ЗЗОСС</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи РОСоружие</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи Оружейник</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Булат Сергея Баранова</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Булат Андрея Умерова</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи Златко</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи Стиль-М</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Оружейная компания</a></li>
+									</ul> <!-- End Sub-Menu-Catalog__list №2 -->
+									<ul class="sub-menu-catalog__list">
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи из стали 40х102С2М</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи из стали 95х18</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи из стали 100х13м</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи из стали 110х18м-ШД</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи из стали ЭИ-107 ТЦ</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи из стали 50х14МФ</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи из стали AUS-8</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи из стали К340</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи из стали M390</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи из стали ЭП-766</a></li>
+									</ul> <!-- End Sub-Menu-Catalog__list №3 -->
+									<ul class="sub-menu-catalog__list">
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Паста ГОИ</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Алмазная паста</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Бруски и камни для заточки</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Заточные системы</a></li>
+									</ul> <!-- End Sub-Menu-Catalog__list №4 -->
+									<ul class="sub-menu-catalog__list">
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножевые клинки</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Заготовки для ножей</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Литье для ножей</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Материалы для рукоятей</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Уход за рукоятиями ножей</a></li>
+									</ul> <!-- End Sub-Menu-Catalog__list №5 -->
+									<div class="sub-menu-catalog__footer">
+										<a class="sub-menu-catalog__all" href="#">Смотреть все</a>
+									</div>
+									<div class="sub-menu-catalog__footer">
+										<a class="sub-menu-catalog__all" href="#">Смотреть все</a>
+									</div>
+									<div class="sub-menu-catalog__footer">
+										<a class="sub-menu-catalog__all" href="#">Смотреть все</a>
+									</div>
+									<div class="sub-menu-catalog__footer">
+										<a class="sub-menu-catalog__all" href="#">Смотреть все</a>
+									</div>
+									<div class="sub-menu-catalog__footer">
+										<a class="sub-menu-catalog__all" href="#">Смотреть все</a>
+									</div>
+								</div> <!-- End Sub-Menu-Catalog__Block №1  -->
+								<div class="sub-menu-catalog__block" data-submenu="2" hidden>
+									<div class="sub-menu-catalog__category">
+										<a class="sub-menu-catalog__link-category" href="#">Каталог ножей</a>
+									</div>
+									<div class="sub-menu-catalog__category">
+										<a class="sub-menu-catalog__link-category" href="#">Производство ножей</a>
+									</div>
+									<ul class="sub-menu-catalog__list">
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Разделочные ножи</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Туристические ножи</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи охотничьи</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Булатные ножи</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи из дамаска</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Тактического назначения</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Метательные ножи</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Мачете и кукри</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи кухонные</a></li>
+									</ul> <!-- End Sub-Menu-Catalog__list №1 -->
+									<ul class="sub-menu-catalog__list">
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи АИР</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи ЗИК</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи ЗЗОСС</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи РОСоружие</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи Оружейник</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Булат Сергея Баранова</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Булат Андрея Умерова</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи Златко</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Ножи Стиль-М</a></li>
+										<li class="sub-menu-catalog__item"><a class="sub-menu-catalog__link" href="#">Оружейная компания</a></li>
+									</ul> <!-- End Sub-Menu-Catalog__list №2 -->
+									<div class="sub-menu-catalog__footer">
+										<a class="sub-menu-catalog__all" href="#">Смотреть все</a>
+									</div>
+									<div class="sub-menu-catalog__footer">
+										<a class="sub-menu-catalog__all" href="#">Смотреть все</a>
+									</div>
+								</div> <!-- End Sub-Menu-Catalog__Block №2  -->
+							</div> <!-- End Sub-Menu-Catalog__Container -->
+						</div> <!-- End Menu-Catalog__Sub-Item -->
+					</nav> <!-- End Catalog-Header__Menu -->
+				</div> <!-- End Catalog-Header__Container -->
+			</div> <!-- End Header__Catalog -->
+		</header> <!-- End Header -->
+
+		<main class="page page__product">
+
+			<div class="page__header">
+				<div class="page__container">
+					<h1 class="page__title title">Разделочные ножи</h1>
+					<nav class="page__breadcrumbs breadcrumbs">
+						<ul class="breadcrumbs_list">
+							<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="./home.html">Главная</a></li>
+							<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="./catalog.html">Разделочные ножи</a></li>
+							<li class="breadcrumbs__item"><span class="breadcrumbs__current" href="#">Нож Снегирь</span></li>
+						</ul>
+					</nav>
+				</div> <!-- End Page__Container -->
+			</div> <!-- End Page Header -->
+
+			<div class="product">
+				<div class="product__container">
+
+					<div class="product__main main-product">
+
+						<div class="main-product__images images-product">
+							<div class="images-product__slider">
+								<div class="images-product__swiper">
+									<div class="images-product__slide-ibg">
+										<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.jpg" alt="image"></picture>
+									</div> <!-- №1 -->
+									<div class="images-product__slide-ibg">
+										<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.jpg" alt="image"></picture>
+									</div> <!-- №2 -->
+									<div class="images-product__slide-ibg">
+										<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.jpg" alt="image"></picture>
+									</div> <!-- №3 -->
+									<div class="images-product__slide-ibg">
+										<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.jpg" alt="image"></picture>
+									</div> <!-- №4 -->
+									<div class="images-product__slide-ibg">
+										<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.jpg" alt="image"></picture>
+									</div> <!-- №5 -->
+								</div>
+							</div> <!-- End Images-Product__Slider -->
+							<div class="images-product__thumbs thumbs-images">
+								<div class="thumbs-images__swiper">
+									<div class="thumbs-images__slide-ibg">
+										<picture><source srcset="img/product/02.webp" type="image/webp"><img src="img/product/02.jpg" alt="image"></picture>
+									</div> <!-- №1 -->
+									<div class="thumbs-images__slide-ibg">
+										<picture><source srcset="img/product/03.webp" type="image/webp"><img src="img/product/03.jpg" alt="image"></picture>
+									</div> <!-- №2 -->
+									<div class="thumbs-images__slide-ibg">
+										<picture><source srcset="img/product/04.webp" type="image/webp"><img src="img/product/04.jpg" alt="image"></picture>
+									</div> <!-- №3 -->
+									<div class="thumbs-images__slide-ibg">
+										<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.jpg" alt="image"></picture>
+									</div> <!-- №4 -->
+									<div class="thumbs-images__slide-ibg">
+										<picture><source srcset="img/product/03.webp" type="image/webp"><img src="img/product/03.jpg" alt="image"></picture>
+									</div> <!-- №5 -->
+								</div>
+							</div> <!-- End Images-Product__Thumbs -->
+						</div> <!-- End Procut__Images -->
+
+						<div class="main-product__body body-product">
+							<div class="body-product__header header-product">
+								<div class="header-product__line">
+									<h1 class="header-product__title">Нож Снегирь</h1>
+									<a class="header-product__link _icon-compare" href="#"></a>
+									<a class="header-product__link _icon-favorite" href="#"></a>
+								</div>
+								<div class="header-product__rating rating">
+									<div class="rating__body">
+										<div class="rating__active"></div>
+										<div class="rating__items">
+											<input type="radio" class="rating__item" value="1" name="rating">
+											<input type="radio" class="rating__item" value="2" name="rating">
+											<input type="radio" class="rating__item" value="3" name="rating">
+											<input type="radio" class="rating__item" value="4" name="rating">
+											<input type="radio" class="rating__item" value="5" name="rating">
+										</div>
+									</div>
+									<div class="rating__value">3.6</div>
+								</div>
+							</div>
+							<div class="body-product__table table-product">
+								<div class="table-product__label">Артикул</div>
+								<div class="table-product__value">AF0000001952</div>
+								<div class="table-product__label">Торговая марка:</div>
+								<div class="table-product__value">WUESTHOF (Германия)</div>
+								<div class="table-product__label">Серия:</div>
+								<div class="table-product__value">Ножи серии Classic Ikon</div>
+								<div class="table-product__label">Бонусные баллы: </div>
+								<div class="table-product__value">38</div>
+							</div>
+							<div class="body-product__options options-product">
+								<div class="options-product__label">Сталь</div>
+								<div class="options-product__value">
+									<select class="form" name="form[]" data-class-modif="form">
+										<option value="1" selected>Выбрать сталь</option>
+										<option value="2">АиР</option>
+										<option value="3">ЗЛАТКО</option>
+										<option value="4">СТИЛЬ-М</option>
+									</select>
+								</div>
+								<div class="options-product__label">Рукоять</div>
+								<div class="options-product__value">
+									<select class="form" name="form[]" data-class-modif="form">
+										<option value="1" selected>Выбрать рукоять</option>
+										<option value="2">Mercorne</option>
+										<option value="3">Бубинго</option>
+										<option value="4">Дуб</option>
+									</select>
+								</div>
+								<div class="options-product__label">Гарда и тыльник</div>
+								<div class="options-product__value">
+									<select class="form" name="form[]" data-class-modif="form">
+										<option value="1" selected>Выбрать гарда и тыльник</option>
+										<option value="2">Алюминий</option>
+										<option value="3">Латунь</option>
+										<option value="4">Литье</option>
+									</select>
+								</div>
+								<div class="options-product__label">Обработка клинка</div>
+								<div class="options-product__value">
+									<select class="form" name="form[]" data-class-modif="form">
+										<option value="1" selected>Выбрать обработку клинка</option>
+										<option value="2">Золочение клинка</option>
+										<option value="3">Золочение рисунка на клинке</option>
+									</select>
+								</div>
+							</div>
+							<div class="body-product__actions actions-product">
+								<div class="actions-product__price">121 $</div>
+								<div class="actions-product__row">
+									<div data-quantity class="actions-product__quantity quantity">
+										<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+										<div class="quantity__input">
+											<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+										</div>
+										<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+									</div>
+									<div class="actions-product__buttons">
+										<a class="actions-product__cart button _icon-cart" href="#">В корзину</a>
+										<a class="actions-product__cart button button_black" href="#">Купить в 1 клик</a>
+									</div>
+								</div>
+							</div>
+						</div> <!-- End Main-Product__Body -->
+
+					</div> <!-- End Product__Main -->
+
+					<div data-tabs="991.98" class="product__info product-info">
+						<nav data-tabs-titles class="product-info__navigation">
+							<button type="button" class="product-info__title _tab-active">Описание</button>
+							<button type="button" class="product-info__title">Характеристика</button>
+							<button type="button" class="product-info__title">Отзывы</button>
+							<button type="button" class="product-info__title">Доставка</button>
+						</nav>
+						<div data-tabs-body class="product-info__content">
+							<div class="product-info__body">
+								<p>
+									Легкий удобный нож с клинком, имеющим пологие вогнутые линзовидные спуски на две трети ширины клинка, образующие тонкое,
+									прекрасно режущее лезвие толщиной около 0,6 мм в районе подводов.
+								</p>
+								<p>
+									Обух клинка со спинкой рукояти имеет одну плавную дугообразную линию. На пяте перед рукоятью есть подпальцевый вырез для точных работ.
+								</p>
+								<p>
+									Необходимо проявлять некоторую осторожность при работе с большими боковыми нагрузками на лезвие ножа, ввиду небольшой толщины клинка
+									в рабочей части.
+								</p>
+								<p>
+									Монтаж рукояти накладной плашечный. На навершии рукояти, функцию которого выполняет выступающий из под плашек хвостовик,
+									имеется отверстие под темляк. Этот нож удобный помощник при работе с продуктами и охоте на боровую и водоплавающую дичь.
+								</p>
+							</div>
+							<div class="product-info__body">
+								Здесь должен бы быть контент, но его нету :(
+							</div>
+							<div class="product-info__body">
+								<p>
+									У данного товара нет отзывов. Станьте первым, кто оставил отзыв об этом товаре !
+								</p>
+							</div>
+							<div class="product-info__body">
+								Здесь должен бы быть контент, но его нету :(
+							</div>
+						</div>
+					</div> <!-- End Product-Info -->
+
+				</div>
+			</div> <!-- End Product -->
+
+		</main>
+		<footer class="footer">
+			<section class="footer__text text-footer">
+				<div class="text-footer__container">
+					<h1 class="text-footer__title">Златоустовские ножи интернет-магазин "ЗЛАТМАКС"</h1>
+					<p class="text-footer__descr">Наш интернет-магазин "ЗЛАТМАКС" предлагает Вам ножи очень высокого качества из города оружейников - Златоуста. Златоустовские ножи известны и популярны среди потребителей как на российским рынке, так и за рубежом: ножи охотничьи, хозяйственные, туристические, рыбацкие, складные и метательные. Нож Златоуста - это идеальный друг и товарищ в повседневной жизни и в экстремальных ситуациях. На многую продукцию распространяется гарантия до 10 лет - это один из главных показателей качества. Для Вас на нашем сайте "zlatmax" предложен огромный ассортимент Златоустовских ножей. Наши менеджеры помогут определиться и подобрать самый лучший Златоустовский нож, ориентируясь на Ваши пожелания.</p>
+				</div>
+			</section> <!-- End Footer__Text -->
+			<div class="footer__container">
+				<div class="footer__body body-footer">
+
+					<div class="body-footer__row">
+
+						<div class="body-footer__item item-footer">
+							<div class="item-footer__spoller spoller-item-footer" data-spollers="767.98">
+								<div class="spoller-item-footer__item">
+									<button class="spoller-item-footer__title" type="button" data-spoller>Информация</button>
+									<div class="spoller-item-footer__body">
+										<nav class="menu-footer">
+											<ul class="menu-footer__list">
+												<li class="menu-footer__item"><a class="menu-footer__link" href="#">Златоустовские ножи в Москве и Московской области</a></li>
+												<li class="menu-footer__item"><a class="menu-footer__link" href="#">Ножевые стали</a></li>
+												<li class="menu-footer__item"><a class="menu-footer__link" href="#">О нас</a></li>
+												<li class="menu-footer__item"><a class="menu-footer__link" href="#">Условия оплаты и доставки</a></li>
+												<li class="menu-footer__item"><a class="menu-footer__link" href="#">Политика конфиденциальности</a></li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+						</div> <!-- End Item №1-->
+
+						<div class="body-footer__item item-footer">
+							<div class="item-footer__spoller spoller-item-footer" data-spollers="767.98">
+								<div class="spoller-item-footer__item">
+									<button class="spoller-item-footer__title" type="button" data-spoller>Служба поддержки</button>
+									<div class="spoller-item-footer__body">
+										<nav class="menu-footer">
+											<ul class="menu-footer__list">
+												<li class="menu-footer__item"><a class="menu-footer__link" href="#">Контактная информация</a></li>
+												<li class="menu-footer__item"><a class="menu-footer__link" href="#">Возврат товара</a></li>
+												<li class="menu-footer__item"><a class="menu-footer__link" href="#">Карта сайта</a></li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+						</div> <!-- End Item №2-->
+
+						<div class="body-footer__item item-footer">
+							<div class="item-footer__spoller spoller-item-footer" data-spollers="767.98">
+								<div class="spoller-item-footer__item">
+									<button class="spoller-item-footer__title" type="button" data-spoller>Дополнительно</button>
+									<div class="spoller-item-footer__body">
+										<nav class="menu-footer">
+											<ul class="menu-footer__list">
+												<li class="menu-footer__item"><a class="menu-footer__link" href="#">Подарочные сертификаты</a></li>
+												<li class="menu-footer__item"><a class="menu-footer__link" href="#">Партнеры</a></li>
+												<li class="menu-footer__item"><a class="menu-footer__link" href="#">Товары со скидкой</a></li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+						</div> <!-- End Item №3-->
+
+						<div class="body-footer__item item-footer">
+							<div class="item-footer__spoller spoller-item-footer" data-spollers="767.98">
+								<div class="spoller-item-footer__item">
+									<button class="spoller-item-footer__title" type="button" data-spoller>Личный кабинет</button>
+									<div class="spoller-item-footer__body">
+										<nav class="menu-footer">
+											<ul class="menu-footer__list">
+												<li class="menu-footer__item"><a class="menu-footer__link" href="#">Личный кабинет</a></li>
+												<li class="menu-footer__item"><a class="menu-footer__link" href="#">История заказов</a></li>
+												<li class="menu-footer__item"><a class="menu-footer__link" href="#">Мои закладки</a></li>
+												<li class="menu-footer__item"><a class="menu-footer__link" href="#">Рассылка новостей</a></li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+						</div> <!-- End Item №4-->
+
+					</div> <!-- End Row №1 -->
+
+					<div class="body-footer__row">
+
+						<div class="body-footer__item item-footer">
+							<div class="item-footer__spoller spoller-item-footer" data-spollers="767.98">
+								<div class="spoller-item-footer__item">
+									<button class="spoller-item-footer__title" type="button" data-spoller>Контакты</button>
+									<div class="spoller-item-footer__body">
+										<nav class="menu-footer">
+											<ul class="menu-footer__list">
+												<li class="menu-footer__item"><a class="menu-footer__link _icon-phone" href="tel:12003334455">1 (200) 333-44-55</a></li>
+												<li class="menu-footer__item _icon-clock">
+													<div>
+														<p>Пн-Пт</p>
+														<p>7:00 - 16:00</p>
+													</div>
+												</li>
+												<li class="menu-footer__item"><a class="menu-footer__link _icon-location" href="#">Златоуст,<br> ул. Шоссейная, <br> д. 1, офис «6Б»</a></li>
+												<li class="menu-footer__item"><a class="menu-footer__link _icon-email" href="mailto:info@test.com">info@test.com</a></li>
+											</ul>
+										</nav>
+										<ul class="social-footer">
+											<li class="social-footer__item">
+												<a class="social-footer__link" href="#">
+													<img src="img/icons/facebook.svg" alt="facebook">
+												</a>
+											</li>
+											<li class="social-footer__item">
+												<a class="social-footer__link" href="#">
+													<img src="img/icons/viber.svg" alt="viber">
+												</a>
+											</li>
+											<li class="social-footer__item">
+												<a class="social-footer__link" href="#">
+													<img src="img/icons/telegram.svg" alt="">
+												</a>
+											</li>
+											<li class="social-footer__item">
+												<a class="social-footer__link" href="#">
+													<img src="img/icons/whatsapp.svg" alt="">
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div> <!-- End Item №1-->
+
+						<div class="body-footer__item item-footer">
+							<div class="item-footer__spoller spoller-item-footer" data-spollers="767.98">
+								<div class="spoller-item-footer__item">
+									<button class="spoller-item-footer__title" type="button" data-spoller>Полезные ссылки</button>
+									<div class="spoller-item-footer__body">
+										<nav class="menu-footer">
+											<ul class="menu-footer__list">
+												<li class="menu-footer__item"><a class="menu-footer__link" href="#">Способы оплаты и доставки</a></li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+						</div> <!-- End Item №2-->
+
+						<div class="body-footer__item item-footer">
+							<div class="item-footer__spoller spoller-item-footer" data-spollers="767.98">
+								<div class="spoller-item-footer__item">
+									<button class="spoller-item-footer__title" type="button" data-spoller>Наша гарантия</button>
+									<div class="spoller-item-footer__body">
+										<p class="spoller-item-footer__descr">Недовольны своей покупкой?
+											Вы можете вернуть ее в течении
+											30 дней с даты получения, <br>
+											согласно <a href="#">нашим правилам</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div> <!-- End Item №3-->
+
+						<div class="body-footer__item item-footer">
+							<div class="item-footer__spoller spoller-item-footer" data-spollers="767.98">
+								<div class="spoller-item-footer__item">
+									<button class="spoller-item-footer__title" type="button" data-spoller>Новостная рассылка</button>
+									<form class="spoller-item-footer__body footer-subscribe" action="#">
+										<label class="footer-subscribe__label" for="subscribe-input">Подпишитесь прямо сейчас!</label>
+										<div class="footer-subscribe__line">
+											<input class="footer-subscribe__input" id="subscribe-input" type="text" name="form[]" data-required="email" data-error="Ошибка" autocomplete="off" placeholder="example@gmail.com">
+											<button class="footer-subscribe__button _icon-spoller-arrow"></button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div> <!-- End Item №4-->
+
+					</div> <!-- End Row №2 -->
+
+					<div class="body-footer__bottom">
+						<p class="body-footer__rules">Все материалы, размещенные на сайте, носят справочный характер и не являются
+							публичной офертой, определяемойположениями Статьи 437 Гражданского кодекса Российской Федерации.
+							При копировании материалов гиперссылка на www.zlatmax.ru обязательна!</p>
+						<p class="body-footer__copyright">Златоустовские ножи <span>www.zlatmax.ru ©</span></p>
+					</div>
+
+				</div>
+			</div> <!-- End Footer__Container -->
+		</footer> <!-- End Footer -->
+		<script src="./js/app.min.js?_v=20240113164143"></script>
+	</div>
+</body>
+
+</html>
